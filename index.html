@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+
+    
+
+    <style>
+        /* CSS RESET */
+        body {
+            font-family: 'Rubik Spray Paint', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+            background-size: 1920 1080;
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        .left {
+            /* color: white; */
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 34px;
+            top: 4px;
+        }
+
+        .left img {
+            width: 120px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 0px;
+        }
+
+        .mid {
+            /* color: white; */
+            display: block;
+            width: 41%;
+            margin: 15px auto;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            /* color: white; */
+            position: absolute;
+            right: 34px;
+            top: 27px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 17px;
+        }
+
+        .navbar li a {
+            /* display: inline-block; */
+            text-decoration: none;
+            color: white;
+            padding: 34px 5px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: grey;
+
+        }
+
+        .btn {
+            font-family: 'Rubik Spray Paint', cursive;
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(54, 51, 51);
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 105px 32px;
+            padding: 41px;
+            width: 33%;
+            border-radius: 25px;
+            background-color: #1a21298c;
+        }
+
+        .container h1 {
+            font-family: 'Rubik Vinyl', cursive;
+            text-align: center;
+        }
+
+        .form-group input {
+            font-family: 'Rubik Spray Paint', cursive;
+            text-align: center;
+            display: block;
+            width: 221px;
+            padding: 6px;
+            border: 2px solid black;
+            margin: 6px auto;
+            border-radius: 12px;
+            font-size: 15px;
+        }
+        .container button{
+            display: block;
+            width: 23%;
+            margin: auto; 
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Power Fitness</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" class="active">About Us</a></li>
+                <li><a href="#" class="active">Fitness Calculator</a></li>
+                <li><a href="#" class="active">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">
+                Call us now!
+            </button><button class="btn">
+                Email us
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym in Biratnagar now!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
